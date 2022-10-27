@@ -1,0 +1,23 @@
+.container-test {
+    width: 400px;
+    height: 800px;
+    background-image: url('../../../assets/images/Disruptor_Lore.webp');
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+
+mat-icon {
+    color: white;
+    font-size: 32px;
+}

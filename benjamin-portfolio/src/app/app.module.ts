@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModulesModule } from './modules/modules.module';
-import { ResumePageComponent } from './modules/resume-page/resume-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialsDefinitionModule } from 'src/angular.materials';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,10 @@ import { ResumePageComponent } from './modules/resume-page/resume-page.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ModulesModule
+    ModulesModule,
+    SharedModule,
+    MaterialsDefinitionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
