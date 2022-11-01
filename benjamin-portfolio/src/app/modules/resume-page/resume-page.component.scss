@@ -1,6 +1,6 @@
 .container-test {
     width: 400px;
-    height: 800px;
+    height: 80vh;
     background-image: url('../../../assets/images/Disruptor_Lore.webp');
     background-size: 120% 100%;
     background-repeat: no-repeat;
@@ -20,4 +20,13 @@
 mat-icon {
     color: white;
     font-size: 32px;
+}
+
+.content {
+    height: 100%;
+}
+
+app-text {
+    position: absolute;
+    padding: 12px;
 }
