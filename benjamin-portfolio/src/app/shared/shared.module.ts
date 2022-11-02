@@ -5,15 +5,19 @@ import { SecondaryTitleComponent } from './secondary-title/secondary-title.compo
 import { PageContainerComponent } from './page-container/page-container.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TextComponent } from './text/text.component';
+import { DividerComponent } from './divider/divider.component';
+import { MatIconModule } from '@angular/material/icon';
+import { IconComponent } from './icon/icon.component';
 
 const components = [
-  TitleComponent, SecondaryTitleComponent, PageContainerComponent, LayoutComponent, TextComponent
+  TitleComponent, SecondaryTitleComponent, PageContainerComponent, LayoutComponent, TextComponent, DividerComponent, IconComponent,
 ]
 
 @NgModule({
   declarations: components,
   imports: [
     CommonModule,
+    MatIconModule,
   ],
   exports: components,
 })

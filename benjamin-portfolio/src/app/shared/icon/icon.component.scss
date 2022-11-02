@@ -1,0 +1,15 @@
+.youtube {
+    height: 24px;
+    width: 24px;
+    fill: white;
+    transition: 0.25s;
+    padding: 8px;
+}
+
+.youtube:hover {
+    height: 32px;
+    width: 32px;
+    fill: red;
+    transition: 0.25s;
+    padding: 0;
+}
