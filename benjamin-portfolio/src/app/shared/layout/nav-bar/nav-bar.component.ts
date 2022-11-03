@@ -17,4 +17,8 @@ export class NavBarComponent implements OnInit {
   toggleNav() {
     this.isHidden = !this.isHidden;
   }
+
+  select(icon: string) {
+    this.currentlySelected = icon;
+  }
 }

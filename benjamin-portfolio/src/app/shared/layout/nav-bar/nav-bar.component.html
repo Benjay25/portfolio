@@ -8,7 +8,14 @@
     </div>
     
     <div class="nav-bar-icons">
-        <app-icon *ngFor="let icon of icons" [isSelected]="currentlySelected == icon">{{icon}}</app-icon>
+        <app-icon matRipple 
+        [matRippleUnbounded]="true" 
+        [matRippleCentered]="true" 
+        *ngFor="let icon of icons" 
+        [isSelected]="currentlySelected == icon"
+        (click)="select(icon)">
+            {{icon}}
+        </app-icon>
     </div>
 </div>
 

@@ -11,6 +11,7 @@ import { IconComponent } from './icon/icon.component';
 import { SocialMediaLinksComponent } from './social-media-links/social-media-links.component';
 import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { SkillBlockComponent } from './skill-block/skill-block.component';
+import { MatRippleModule } from '@angular/material/core';
 
 const components = [
   TitleComponent,
@@ -30,6 +31,7 @@ const components = [
   imports: [
     CommonModule,
     MatIconModule,
+    MatRippleModule
   ],
   exports: components,
 })
