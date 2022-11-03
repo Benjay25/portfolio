@@ -1,0 +1,42 @@
+.icon {
+    height: 36px;
+    width: 36px;
+    fill: white;
+    padding: 6px 0;
+    transition: 0.25s;
+    margin: 0 12px;
+}
+
+icon:last-child {
+    margin: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    transition: 0.25s;
+    padding: 0;
+    
+    margin: 0 6px;
+}
+
+.youtube:hover {
+    fill: #FF0000;
+}
+
+.instagram:hover {
+    fill: purple
+}
+
+.twitter:hover {
+    fill: #1DA1F2;
+}
+
+.facebook:hover {
+    fill: #1877F2;
+}
+
+.linkedIn:hover {
+    fill: #0A66C2;
+}

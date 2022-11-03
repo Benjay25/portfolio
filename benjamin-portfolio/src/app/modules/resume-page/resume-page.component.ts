@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialMediaLinks } from 'src/app/shared/social-media-links/social-media-links.type';
 
 @Component({
   selector: 'app-resume-page',

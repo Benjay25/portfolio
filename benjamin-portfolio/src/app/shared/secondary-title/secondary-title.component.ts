@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-secondary-title',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secondary-title.component.scss']
 })
 export class SecondaryTitleComponent implements OnInit {
-
+  @Input() isWhiteText = false;
   constructor() { }
 
   ngOnInit(): void {

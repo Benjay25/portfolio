@@ -1,0 +1,14 @@
+<div *ngIf="isHidden" class="closed">
+    <mat-icon class="menu-icon">menu icon</mat-icon>
+</div>
+
+<div class="nav-bar" [ngClass]="isHidden ? 'hide' : 'show'">
+    <div class="nav-bar-burger" matRipple (click)="toggleNav()">
+        <mat-icon class="menu-icon">menu icon</mat-icon>
+    </div>
+    
+    <div class="nav-bar-icons">
+        <app-icon *ngFor="let icon of icons" [isSelected]="currentlySelected == icon">{{icon}}</app-icon>
+    </div>
+</div>
+
