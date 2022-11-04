@@ -1,21 +1,38 @@
-<div *ngIf="isHidden" class="closed">
+<div *ngIf="isHidden" class="closed" matRipple (click)="toggleNav()">
     <mat-icon class="menu-icon">menu icon</mat-icon>
 </div>
 
-<div class="nav-bar" [ngClass]="isHidden ? 'hide' : 'show'">
-    <div class="nav-bar-burger" matRipple (click)="toggleNav()">
-        <mat-icon class="menu-icon">menu icon</mat-icon>
-    </div>
+<div class="container">
+    <!-- Nav bar -->
+    <div class="nav-bar" [ngClass]="isHidden ? 'hide' : 'show'">
+        <div class="nav-bar-burger" matRipple (click)="toggleNav()">
+            <mat-icon class="menu-icon">menu icon</mat-icon>
+        </div>
     
-    <div class="nav-bar-icons">
-        <app-icon matRipple 
-        [matRippleUnbounded]="true" 
-        [matRippleCentered]="true" 
-        *ngFor="let icon of icons" 
-        [isSelected]="currentlySelected == icon"
-        (click)="select(icon)">
-            {{icon}}
-        </app-icon>
+        <div class="nav-bar-icons">
+            <app-icon matRipple 
+                [matRippleUnbounded]="true" 
+                [matRippleCentered]="true" 
+                *ngFor="let icon of icons" 
+                [isSelected]="currentlySelected == icon"
+                (click)="select(icon)">
+                {{icon}}
+            </app-icon>
+        </div>
+    </div>
+
+    <!-- Settings menu -->
+    <div class="nav-bar" [ngClass]="isSettingsMenuOpen ? 'show' : 'hide'">
+        <div class="nav-bar-burger"></div>
+        <div class="nav-bar-icons settings-menu">
+            <app-icon matRipple 
+                [matRippleUnbounded]="true" 
+                [matRippleCentered]="true" 
+                *ngFor="let icon of settingsIcons" 
+                (click)="selectSettingsIcon(icon)">
+                {{icon}}
+            </app-icon>
+        </div>
     </div>
 </div>
 

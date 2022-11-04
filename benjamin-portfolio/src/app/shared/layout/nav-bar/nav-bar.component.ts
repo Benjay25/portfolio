@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   isHidden = false;
-  icons: string[] = ['home', 'phone', 'note', 'person'];
+  isSettingsMenuOpen = false;
+  icons: string[] = ['home', 'phone', 'settings', 'person'];
+  settingsIcons: string[] = ['keyboard_arrow_left','keyboard_arrow_left','keyboard_arrow_left','keyboard_arrow_left',];
   currentlySelected = 'home';
+  currentlySelectedSetting = '';
   constructor() { }
 
   ngOnInit(): void {
@@ -16,9 +19,24 @@ export class NavBarComponent implements OnInit {
 
   toggleNav() {
     this.isHidden = !this.isHidden;
+    this.isSettingsMenuOpen = false
+  }
+
+  toggleSettings() {
+    this.isSettingsMenuOpen = !this.isSettingsMenuOpen;
   }
 
   select(icon: string) {
     this.currentlySelected = icon;
+
+    if (icon === "settings") {
+      this.toggleSettings()
+    }
+  }
+
+  selectSettingsIcon(icon: string) {
+    if (icon === "keyboard_arrow_left") {
+      this.toggleSettings()
+    }
   }
 }

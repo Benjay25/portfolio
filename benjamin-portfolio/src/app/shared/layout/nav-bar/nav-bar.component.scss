@@ -2,6 +2,10 @@
     height: 100vh;
 }
 
+.container {
+    display: flex;
+}
+
 .nav-bar-icons {
     height: calc(100% - 50px);
     display: flex;
@@ -16,6 +20,10 @@ app-icon {
 
 app-icon:last-child {
     margin: 0;;
+}
+
+.settings-menu {
+    margin-top: 92px;
 }
 
 .nav-bar-burger {
@@ -77,4 +85,5 @@ app-icon:last-child {
   .closed {
     position: absolute;
     padding-left: 13px;
+    cursor: pointer;
   }
