@@ -23,7 +23,7 @@
 
     <!-- Settings menu -->
     <div class="nav-bar" [ngClass]="isSettingsMenuOpen ? 'show' : 'hide'">
-        <div class="nav-bar-burger"></div>
+        <div class="nav-bar-burger" [ngClass]="isSettingsMenuOpen ? 'show' : 'hide'"></div>
         <div class="nav-bar-icons settings-menu">
             <app-icon matRipple 
                 [matRippleUnbounded]="true" 

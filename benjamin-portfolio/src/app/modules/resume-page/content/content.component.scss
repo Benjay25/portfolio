@@ -2,6 +2,8 @@
     padding: 24px 0;
     height: calc(100vh - 48px);   
     overflow-y: auto;
+    scrollbar-color: #52b258 #234926;
+    scrollbar-width: thin;
 }
 
 .skill-block-container {

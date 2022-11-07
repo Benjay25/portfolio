@@ -9,7 +9,7 @@ export class NavBarComponent implements OnInit {
   isHidden = false;
   isSettingsMenuOpen = false;
   icons: string[] = ['home', 'phone', 'settings', 'person'];
-  settingsIcons: string[] = ['keyboard_arrow_left','home', 'phone', 'settings', 'person',];
+  settingsIcons: string[] = ['keyboard_arrow_left','photo', 'settings', 'person',];
   currentlySelected = 'home';
   currentlySelectedSetting = '';
   constructor() { }
