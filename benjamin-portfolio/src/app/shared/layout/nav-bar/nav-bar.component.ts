@@ -9,7 +9,7 @@ export class NavBarComponent implements OnInit {
   isHidden = false;
   isSettingsMenuOpen = false;
   icons: string[] = ['home', 'phone', 'settings', 'person'];
-  settingsIcons: string[] = ['keyboard_arrow_left','keyboard_arrow_left','keyboard_arrow_left','keyboard_arrow_left',];
+  settingsIcons: string[] = ['keyboard_arrow_left','home', 'phone', 'settings', 'person',];
   currentlySelected = 'home';
   currentlySelectedSetting = '';
   constructor() { }
@@ -31,6 +31,8 @@ export class NavBarComponent implements OnInit {
 
     if (icon === "settings") {
       this.toggleSettings()
+    } else {
+      this.isSettingsMenuOpen = false;
     }
   }
 

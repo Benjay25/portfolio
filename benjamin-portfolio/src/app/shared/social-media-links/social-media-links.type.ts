@@ -4,4 +4,5 @@ export interface SocialMediaLinks {
     LinkedIn?: string;
     Twitter?: string;
     Facebook?: string;
+    Github?: string;
 }

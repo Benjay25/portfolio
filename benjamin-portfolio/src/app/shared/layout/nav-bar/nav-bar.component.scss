@@ -33,6 +33,14 @@ app-icon:last-child {
     text-align: center;
 }
 
+.closed {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    padding-left: 13px;
+    cursor: pointer;
+}
+
 .menu-icon {
     color: rgb(212, 212, 212);
     font-size: 24px;
@@ -80,10 +88,4 @@ app-icon:last-child {
         width: 0;
         opacity: 0%;
     }
-  }
-
-  .closed {
-    position: absolute;
-    padding-left: 13px;
-    cursor: pointer;
   }
