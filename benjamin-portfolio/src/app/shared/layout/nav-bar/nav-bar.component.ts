@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../layout.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,11 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   isHidden = false;
   isSettingsMenuOpen = false;
-  icons: string[] = ['home', 'phone', 'settings', 'person'];
-  settingsIcons: string[] = ['keyboard_arrow_left','photo', 'settings', 'person',];
+  icons: string[] = ['home', 'phone', 'settings', 'photo_library'];
+  settingsIcons: string[] = ['keyboard_arrow_left','photo', 'person',];
   currentlySelected = 'home';
   currentlySelectedSetting = '';
-  constructor() { }
+  constructor(private layoutService: LayoutService) { }
 
   ngOnInit(): void {
   }
@@ -31,7 +32,13 @@ export class NavBarComponent implements OnInit {
 
     if (icon === "settings") {
       this.toggleSettings()
-    } else {
+    } 
+
+    if (icon === "photo" || icon === "photo_library") {
+      this.layoutService.togglePicture()
+    } 
+    
+    if (icon !== "settings") {
       this.isSettingsMenuOpen = false;
     }
   }

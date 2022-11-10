@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SocialMediaLinks } from '../social-media-links/social-media-links.type';
+import { LayoutService } from './layout.service';
 
 @Component({
   selector: 'app-layout',
@@ -11,7 +12,11 @@ export class LayoutComponent implements OnInit {
     Youtube: 'https://www.youtube.com/',
     Twitter: 'https://www.twitter.com/',
   }
-  constructor() { }
+  constructor(private layoutService: LayoutService) { }
+
+  get isPictureVisible() {
+    return this.layoutService.isPictureVisible;
+  }
 
   ngOnInit(): void {
   }

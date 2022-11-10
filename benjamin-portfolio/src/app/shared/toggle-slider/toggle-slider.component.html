@@ -1,0 +1,6 @@
+<div class="circle" [ngClass]="isToggledOn ? 'circle circle-toggled' : 'circle'" (click)="toggle()">
+    <mat-icon *ngIf="isToggledOn" class="icon">{{ toggledOnIcon }}</mat-icon>
+    <mat-icon *ngIf="!isToggledOn" class="icon">{{ toggledOffIcon }}</mat-icon>
+    <div *ngIf="isToggledOn">{{ toggledOnText }}</div>
+    <div *ngIf="!isToggledOn">{{ toggledOffText }}</div>
+</div>

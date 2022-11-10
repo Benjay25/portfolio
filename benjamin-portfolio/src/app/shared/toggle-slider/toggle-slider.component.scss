@@ -1,0 +1,31 @@
+.circle {
+    border-radius: 50%;
+    background-color: #52b258;
+    color: rgb(212, 212, 212);
+    opacity: 0.5;
+    margin-right: 10px;
+    margin-left: 0px;
+    transition: 0.25s;
+    height: 28px;
+    width: 28px;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.circle-toggled {
+    opacity: 1;
+    margin-right: 0px;
+    margin-left: 10px;
+    transition: 0.25s;
+}
+
+.icon {
+    padding: 2px;
+}
+
+.text {
+    color: white;
+    font-size: 14px;
+}
