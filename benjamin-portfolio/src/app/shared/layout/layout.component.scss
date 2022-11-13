@@ -9,9 +9,13 @@
 }
 
 .show-picture {
-    
+    opacity: 1;
+    transition: 0.5s;
+    width: unset;
 }
 
 .hide-picture {
-
+    opacity: 0;
+    transition: 0.5s; 
+    width: 0;
 }
