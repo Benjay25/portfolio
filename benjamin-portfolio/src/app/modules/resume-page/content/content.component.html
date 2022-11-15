@@ -18,11 +18,13 @@
     <app-divider ></app-divider>
     
     <app-title>My Education</app-title>
-    <app-skill-block></app-skill-block>
-    <app-skill-block></app-skill-block>
+    <ng-container *ngFor="let i of education">
+        <app-experience-block></app-experience-block>
+        <div class="padding-bottom"></div>
+    </ng-container>
     <app-divider ></app-divider>
     
     <app-title>My Work Experience</app-title>
-    <app-skill-block></app-skill-block>
-    <app-skill-block></app-skill-block>
+    <app-experience-block *ngFor="let i of work"></app-experience-block>
+    <div class="padding-bottom"></div>
 </div>

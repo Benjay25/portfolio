@@ -9,11 +9,14 @@ import { LayoutService } from '../layout.service';
 export class NavBarComponent implements OnInit {
   isHidden = false;
   isSettingsMenuOpen = false;
-  icons: string[] = ['home', 'phone', 'settings', 'photo_library'];
   settingsIcons: string[] = ['keyboard_arrow_left','photo', 'person',];
   currentlySelected = 'home';
   currentlySelectedSetting = '';
   constructor(private layoutService: LayoutService) { }
+
+  get icons() {
+    return this.layoutService.navBarIcons;
+  }
 
   ngOnInit(): void {
   }
@@ -34,7 +37,7 @@ export class NavBarComponent implements OnInit {
       this.toggleSettings()
     } 
 
-    if (icon === "photo" || icon === "photo_library") {
+    if (icon === "photo_size_select_large" || icon === "photo_library") {
       this.layoutService.togglePicture()
     } 
     

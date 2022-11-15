@@ -2,15 +2,15 @@
     padding: 24px 0;
     height: calc(100vh - 48px);   
     overflow-y: auto;
-    scrollbar-color: #52b258 #234926;
+    scrollbar-color: #52b258 #2a452c;
     scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
     opacity: 0.8;
-    background: #234926;
+    background: #2a452c;
     scrollbar-width: thin;
-    width: 8px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -22,5 +22,17 @@
 
 .skill-block-container {
     display: flex;
+    margin-bottom: 24px;
+}
+
+app-experience-block {
+    margin-bottom: 24px;
+}
+
+app-experience-block:last-child {
+    margin-bottom: 0;
+}
+
+.padding-bottom {
     margin-bottom: 24px;
 }

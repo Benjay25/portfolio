@@ -1,0 +1,33 @@
+.container {
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    align-items: center;
+}
+
+.line {
+    width: 2px;
+    height: calc(100% - 38px);
+    background-color: #52b258;
+}
+
+.circle {
+    height: 6px;
+    width: 6px;
+    background-color: #52b258;
+    border-radius: 50%;
+}
+
+app-icon {
+    height: 24px;
+}
+
+.content-block {
+    margin-left: 20px;
+}

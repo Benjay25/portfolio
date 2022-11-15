@@ -13,6 +13,7 @@ import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { SkillBlockComponent } from './skill-block/skill-block.component';
 import { MatRippleModule } from '@angular/material/core';
 import { ToggleSliderComponent } from './toggle-slider/toggle-slider.component';
+import { ExperienceBlockComponent } from './experience-block/experience-block.component';
 
 const components = [
   TitleComponent,
@@ -25,8 +26,9 @@ const components = [
   SocialMediaLinksComponent,
   NavBarComponent,
   SkillBlockComponent,
+  ExperienceBlockComponent,
   ToggleSliderComponent,
-]
+];
 
 @NgModule({
   declarations: components,
