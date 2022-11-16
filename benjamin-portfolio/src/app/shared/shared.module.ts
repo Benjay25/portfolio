@@ -14,6 +14,7 @@ import { SkillBlockComponent } from './skill-block/skill-block.component';
 import { MatRippleModule } from '@angular/material/core';
 import { ToggleSliderComponent } from './toggle-slider/toggle-slider.component';
 import { ExperienceBlockComponent } from './experience-block/experience-block.component';
+import { FormsModule } from '@angular/forms';
 
 const components = [
   TitleComponent,
@@ -35,7 +36,8 @@ const components = [
   imports: [
     CommonModule,
     MatIconModule,
-    MatRippleModule
+    MatRippleModule,
+    FormsModule
   ],
   exports: components,
 })

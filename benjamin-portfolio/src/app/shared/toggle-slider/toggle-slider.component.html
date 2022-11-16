@@ -1,6 +1,4 @@
-<div class="circle" [ngClass]="isToggledOn ? 'circle circle-toggled' : 'circle'" (click)="toggle()">
-    <mat-icon *ngIf="isToggledOn" class="icon">{{ toggledOnIcon }}</mat-icon>
-    <mat-icon *ngIf="!isToggledOn" class="icon">{{ toggledOffIcon }}</mat-icon>
-    <!-- <div *ngIf="isToggledOn">{{ toggledOnText }}</div>
-    <div *ngIf="!isToggledOn">{{ toggledOffText }}</div> -->
-</div>
+<label class="switch">
+    <input matInput type="checkbox" [(ngModel)]="toggleProperty" (ngModelChange)="toggled.emit(toggleProperty)">
+    <span class="slider round"></span>
+  </label>
