@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import * as ApexCharts from 'apexcharts';
 import { HomePageStates } from '../home-page-enum';
 
 @Component({
@@ -10,9 +11,9 @@ export class ContentComponent implements OnInit {
   @Input() state: HomePageStates = HomePageStates.Professional;
   age: number = 0;
   education = new Array(2)
-  work = new Array(2)
+  work = new Array(2)  
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.getAge();
@@ -33,5 +34,5 @@ export class ContentComponent implements OnInit {
     }
 
     this.age = today.getFullYear() - birthDate.getFullYear() - 1;
-  }   
+  }
 }

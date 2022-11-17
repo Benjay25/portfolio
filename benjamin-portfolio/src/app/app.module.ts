@@ -7,6 +7,8 @@ import { ModulesModule } from './modules/modules.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsDefinitionModule } from 'src/angular.materials';
 import { SharedModule } from './shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { SharedModule } from './shared/shared.module';
     ModulesModule,
     SharedModule,
     MaterialsDefinitionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

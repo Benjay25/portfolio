@@ -15,6 +15,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { ToggleSliderComponent } from './toggle-slider/toggle-slider.component';
 import { ExperienceBlockComponent } from './experience-block/experience-block.component';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from './charts/charts.module';
 
 const components = [
   TitleComponent,
@@ -37,8 +38,8 @@ const components = [
     CommonModule,
     MatIconModule,
     MatRippleModule,
-    FormsModule
+    FormsModule,
   ],
-  exports: components,
+  exports: [...components, ChartsModule],
 })
 export class SharedModule { }
