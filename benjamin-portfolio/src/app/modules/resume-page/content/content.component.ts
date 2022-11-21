@@ -23,6 +23,7 @@ export class ContentComponent implements OnInit {
     const birthDate = new Date('1998-02-06');
     const today = new Date();
 
+    
     if (today.getMonth() > birthDate.getMonth()) {
       this.age = today.getFullYear() - birthDate.getFullYear();
       return;

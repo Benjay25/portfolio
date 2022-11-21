@@ -17,6 +17,11 @@ export type ChartOptions = {
     plotOptions: ApexPlotOptions;
 };
 
+export type ChartData = {
+    series: ApexAxisChartSeries,
+    categories: string[];
+}
+
 export const CHART_DEFAULTS: ChartOptions = {   
     chart: {
         height: 350,
@@ -71,8 +76,8 @@ export const CHART_DEFAULTS: ChartOptions = {
         text: "My First Angular Chart",
         style: {
             fontSize:  '14px',
-            fontWeight:  'bold',
-            fontFamily:  undefined,
+            fontWeight:  'normal',
+            fontFamily:  'Akshar',
             color:  '#FFF'
         },
     },
