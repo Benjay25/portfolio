@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as ApexCharts from 'apexcharts';
+import { ChartData } from 'src/app/shared/charts/charts.type';
 import { HomePageStates } from '../home-page-enum';
 
 @Component({
@@ -10,8 +11,8 @@ import { HomePageStates } from '../home-page-enum';
 export class ContentComponent implements OnInit {
   @Input() state: HomePageStates = HomePageStates.Professional;
   age: number = 0;
-  education = new Array(2)
-  work = new Array(2)  
+  education = new Array(2);
+  work = new Array(2);
 
   constructor() {}
 

@@ -1,0 +1,25 @@
+
+<app-title>My Proficiencies</app-title>
+<div class="button-container">
+    <app-icon [isSelected]="chartType == chartTypes.BarChart" (click)="setChartType(chartTypes.BarChart)">bar_chart</app-icon>
+    <app-icon [isSelected]="chartType == chartTypes.PieChart" (click)="setChartType(chartTypes.PieChart)">pie_chart</app-icon>
+    <app-icon [isSelected]="chartType == chartTypes.RadialChart" (click)="setChartType(chartTypes.RadialChart)">multiline_chart</app-icon>
+</div>
+
+<!-- Bar -->
+<ng-container *ngIf="chartType == chartTypes.BarChart">
+    <app-bar-chart [barChartData]="frontEndData"></app-bar-chart>
+    <app-bar-chart [barChartData]="backEndData"></app-bar-chart>
+</ng-container>
+
+<!-- Pie -->
+<ng-container *ngIf="chartType == chartTypes.PieChart">
+    <app-pie-chart [chartData]="frontEndData"></app-pie-chart>
+    <app-pie-chart [chartData]="backEndData"></app-pie-chart>
+</ng-container>
+
+<!-- Radar -->
+<ng-container *ngIf="chartType == chartTypes.RadialChart">
+    <app-bar-chart [barChartData]="frontEndData"></app-bar-chart>
+    <app-bar-chart [barChartData]="backEndData"></app-bar-chart>
+</ng-container>

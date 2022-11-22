@@ -1,1 +1,10 @@
-<app-basic-chart [partialChartOptions]="barChartOptions"></app-basic-chart>
+<apx-chart
+    [series]="barChartOptions.series"
+    [chart]="barChartOptions.chart"
+    [xaxis]="barChartOptions.xAxis"
+    [yaxis]="barChartOptions.yAxis"
+    [title]="barChartOptions.title"
+    [dataLabels]="barChartOptions.dataLabels"
+    [plotOptions]="barChartOptions.plotOptions"
+    [theme]="barChartOptions.theme">
+</apx-chart>

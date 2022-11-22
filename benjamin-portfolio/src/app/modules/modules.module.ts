@@ -5,11 +5,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../shared/shared.module';
 import { PictureComponent } from './resume-page/picture/picture.component';
 import { ContentComponent } from './resume-page/content/content.component';
+import { ProficiencyChartsComponent } from './resume-page/content/proficiency-charts/proficiency-charts.component';
 
 
 
 @NgModule({
-  declarations: [HomePageComponent, PictureComponent, ContentComponent],
+  declarations: [HomePageComponent, PictureComponent, ContentComponent, ProficiencyChartsComponent],
   imports: [
     CommonModule,
     MatIconModule,

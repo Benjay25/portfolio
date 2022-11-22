@@ -7,7 +7,7 @@ import {
 } from "ng-apexcharts";
 
 export type ChartOptions = {
-    series: ApexAxisChartSeries;
+    series: ApexAxisChartSeries | number[];
     chart: ApexChart;
     xAxis: ApexXAxis;
     yAxis: ApexYAxis;
@@ -15,11 +15,13 @@ export type ChartOptions = {
     theme: ApexTheme;
     dataLabels: ApexDataLabels;
     plotOptions: ApexPlotOptions;
+    labels: string[];
 };
 
 export type ChartData = {
     series: ApexAxisChartSeries,
     categories: string[];
+    title: string;
 }
 
 export const CHART_DEFAULTS: ChartOptions = {   
@@ -34,7 +36,7 @@ export const CHART_DEFAULTS: ChartOptions = {
     },
     plotOptions: {
         bar: {
-            horizontal: true
+            horizontal: false
         }
     },
     series: [{
@@ -81,4 +83,5 @@ export const CHART_DEFAULTS: ChartOptions = {
             color:  '#FFF'
         },
     },
+    labels: [],
 };
