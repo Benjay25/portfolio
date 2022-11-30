@@ -16,6 +16,7 @@ import { ToggleSliderComponent } from './toggle-slider/toggle-slider.component';
 import { ExperienceBlockComponent } from './experience-block/experience-block.component';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from './charts/charts.module';
+import { ProjectComponent } from './project/project.component';
 
 const components = [
   TitleComponent,
@@ -30,6 +31,7 @@ const components = [
   SkillBlockComponent,
   ExperienceBlockComponent,
   ToggleSliderComponent,
+  ProjectComponent,
 ];
 
 @NgModule({

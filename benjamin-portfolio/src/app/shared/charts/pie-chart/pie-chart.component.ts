@@ -25,7 +25,7 @@ export class PieChartComponent implements OnInit {
         type: "pie",
       },
       plotOptions: {
-        ...CHART_DEFAULTS.plotOptions,   
+        ...CHART_DEFAULTS.plotOptions,
       },
       labels: this.chartData.categories,
       series: this.chartData.series[0].data as number[],

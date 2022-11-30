@@ -1,0 +1,39 @@
+.card {
+    height: 300px;
+    width: 100%;
+    border: 1px #d4d4d4 solid;
+    position: relative;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.block {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #d4d4d4;
+    
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.content-container {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #52B258;
+    border: 5px #d4d4d4 solid;
+    
+    top: -70px;
+    left: 10px;
+    position: relative;
+    z-index: 1;
+}
