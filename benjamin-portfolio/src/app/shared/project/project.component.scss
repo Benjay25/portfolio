@@ -1,20 +1,21 @@
 .card {
-    height: 300px;
+    height: 250px;
     width: 100%;
-    border: 1px #d4d4d4 solid;
+    border: 1px #e7e7e7 solid;
     position: relative;
     z-index: -1;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 .block {
     position: relative;
     height: 100px;
     width: 100%;
-    background-color: #d4d4d4;
+    background-color: #e7e7e7;
     
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
 .content-container {
@@ -29,11 +30,43 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-color: #52B258;
-    border: 5px #d4d4d4 solid;
+    border: 5px #e7e7e7 solid;
     
     top: -70px;
     left: 10px;
     position: relative;
     z-index: 1;
+}
+
+.image {
+    margin: auto;   
+    height: 80px;
+}
+
+.circle-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #191919;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text {
+    width: calc(100% - 140px);
+    position: relative;
+    right: 0;
+
+    color: white;
+    font-size: 18px;
+}
+
+.text-container {    
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 0;
+    top: -120px;
+    width: calc(100% - 20px);
+    padding: 0 10px;
 }
