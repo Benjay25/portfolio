@@ -1,0 +1,10 @@
+<div class="layout">
+    <app-nav-bar></app-nav-bar>
+    <div [ngClass]="isPictureVisible ? 'show-picture' : 'hide-picture'">
+        <ng-content select="[picture]"></ng-content>
+    </div>
+    <div class="space"></div>
+    <div class="content">
+        <ng-content select="[content]"></ng-content>
+    </div>
+</div>

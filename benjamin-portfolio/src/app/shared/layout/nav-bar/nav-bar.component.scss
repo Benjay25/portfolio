@@ -1,0 +1,92 @@
+.nav-bar {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.nav-bar-icons {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+app-icon {
+    margin-bottom: 16px;
+}
+
+app-icon:last-child {
+    margin: 0;;
+}
+
+.settings-menu {
+    margin-top: 92px;
+}
+
+.nav-bar-burger {
+    height: 40px;
+    width: 50px;
+    background-color: #52b258;
+    text-align: center;
+}
+
+.closed {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    padding-left: 13px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-icon {
+    color: rgb(212, 212, 212);
+    font-size: 24px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    color: white;
+}
+
+.hide {
+    animation-duration: 0.4s;
+    animation-name: slideout;
+    animation-iteration-count: 1;
+    
+    opacity: 0%;
+    width: 0;
+    transition: 0.4s;
+}
+
+.show {
+    animation-duration: 0.4s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    from {
+        width: 0;
+        opacity: 0%;
+    }
+    to {
+        width: 50px;
+        opacity: 100%;
+    }
+  }
+
+@keyframes slideout {
+    from {
+        width: 50px;
+        opacity: 100%;
+    }
+    to {
+        width: 0;
+        opacity: 0%;
+    }
+  }

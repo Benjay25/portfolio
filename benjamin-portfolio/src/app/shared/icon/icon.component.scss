@@ -1,0 +1,12 @@
+.unselected {
+    color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.unselected:hover {
+    color: white;
+}
+
+.selected {
+    color: #52b258;
+}

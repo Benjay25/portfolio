@@ -1,0 +1,21 @@
+.button-container {
+    text-align: end;
+}
+
+app-icon {
+    margin-left: 10px;
+}
+
+app-bar-chart {
+    width: 100%;
+}
+
+.chart-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.charts-wrapper {
+    min-height: 400px;
+}

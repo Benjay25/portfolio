@@ -1,0 +1,35 @@
+<div content class="content">
+    <app-title>About Me</app-title>
+    <app-secondary-title> {{ age }} years</app-secondary-title>
+    <app-text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </app-text>
+    <app-divider ></app-divider>
+
+    <app-title>My Skills</app-title>
+    <div class="skill-block-container">
+        <app-skill-block></app-skill-block>
+        <app-skill-block></app-skill-block>
+    </div>
+    <div class="skill-block-container">
+        <app-skill-block></app-skill-block>
+        <app-skill-block></app-skill-block>
+    </div>
+    <app-divider ></app-divider>
+    
+    <app-title>My Education</app-title>
+    <ng-container *ngFor="let i of education">
+        <app-experience-block></app-experience-block>
+        <div class="padding-bottom"></div>
+    </ng-container>
+    <app-divider ></app-divider>
+    
+    <app-title>My Work Experience</app-title>
+    <app-experience-block *ngFor="let i of work"></app-experience-block>
+    <div class="padding-bottom"></div>
+    
+    <app-proficiency-charts></app-proficiency-charts>
+    <app-divider ></app-divider>
+
+    <app-project></app-project>
+</div>

@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #242425;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Akshar';
+    
+    overflow: hidden;
+}
+
+.text-primary {
+    color: white;
+}
+
+.text-secondary {
+    color: #52b258;
+}
+
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-shadow {
+    box-shadow: rgb(0 0 0 / 15%) 5px 8px 7px 1px;
+}
