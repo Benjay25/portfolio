@@ -17,9 +17,11 @@ import { ExperienceBlockComponent } from './experience-block/experience-block.co
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from './charts/charts.module';
 import { ProjectComponent } from './project/project.component';
+import { SubTitleComponent } from './sub-title/sub-title.component';
 
 const components = [
   TitleComponent,
+  SubTitleComponent,
   SecondaryTitleComponent,
   PageContainerComponent,
   LayoutComponent,

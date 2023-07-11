@@ -43,5 +43,4 @@ export class ProficiencyChartsComponent implements OnInit {
   setChartType(type: ChartTypes) {
     this.chartType = type;
   }
-
 }
